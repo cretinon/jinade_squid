@@ -8,7 +8,7 @@ env:
   matrix:
     - ARCH=x86_64 DISTRIB=debian
     - ARCH=x86_64 DISTRIB=alpine
-    - ARCH=armhf DISTRIB=debian
+#    - ARCH=armhf DISTRIB=debian
     - ARCH=armhf DISTRIB=alpine
   global:
   - secure: f/NmBF9YdA9KOUesjM/RN4TmKKhXyNypHsV9TDkdwsxyNzSWLSDq4HYARUGR8TZ/5fD3ZNI1V+xL+iKsWdvPToFVt4R3dvvLWtWOXXGosbuF8e/B/KRKOvrJIdsHn4m5CU9P3pfs8pIzFrlhH2NKxLJID9gV27hoNxCb1xh4vAEuz8uBZNROycSsjk2u33ca2UelXXaDtxVMjY/SeHYJd0QqTwkLKYp10tHwvo6zSFtf72VSaImlqDxSNqcHsGAs2Okg1QlK3khujPg7vI+xCAxi3fun9TJzN3j+DSnCmUqhprZE7Vr+iuev0QlIy04sP2k2jMMbwYOOoVbIn9/v1fUsgH9WfsOSJf/pyXRULzgcpt07kW0aB2g2Gm4fefu8SpTedX5blFZSglsA9uzczV6gUJ5tPGQWsokOTjaLZh2Wl+12Ql80gro83kbF8FjeIxLGK9FmS72raVQ930Kevdnvw6aHE2+ppTMuYcs7ifW1DMg2RVteVqeYypESRKRgQNRtAWpdDO0aIWYW0i5Ec0XH39EPmyK3K75oio4Kf1BHRwBNyRzuf1DvRMDBWltARlfIh5Qk2JCyl7pfIemot8pjyABEykzm21DUv2bDiqRhvgZqDHCOCF/wBuZSVU0MpI4Oceg9bsCPDXSOH4xRbCAlI6TMxttVvPfofXuX5hE=
