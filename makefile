@@ -194,7 +194,7 @@ svc_first_push :
 		git remote add origin https://$(GITHUB_USER):$(GITHUB_PASS)@github.com/$(GITHUB_USER)/$(OPSYS)_$(SVCNAME).git ;\
 		git push origin master ;\
 		head -12 .travis.yml > .travis.yml.NEW   ;\
-		docker run -it --rm $(DOCKER_USER)/dorax_travis:debian_x86_64 sh -ec "cd /tmp ; rm -rf .travis.yml ; touch .travis.yml ; echo "y" | travis version ; travis sync -t $(TRAVIS_TOKEN) ; sleep 5 ; travis enable -r $(DOCKER_USER)/$(OPSYS)_$(SVCNAME) ; sleep 5 ; travis encrypt -r $(DOCKER_USER)/$(OPSYS)_$(SVCNAME) DOCKER_EMAIL=$(EMAIL) --add ; travis encrypt -r $(DOCKER_USER)/$(OPSYS)_$(SVCNAME) DOCKER_USER=$(DOCKER_USER) --add ; travis encrypt -r $(DOCKER_USER)/$(OPSYS)_$(SVCNAME) DOCKER_PASS=$(DOCKER_PASS) --add ; cat .travis.yml" | grep -v "env" | grep -v "repository" | grep -v "completion" | grep -v "enable" | grep -v "sync" >> .travis.yml.NEW ;\
+		docker run -it --rm $(DOCKER_USER)/jinade_travis:debian_x86_64 sh -ec "cd /tmp ; rm -rf .travis.yml ; touch .travis.yml ; echo "y" | travis version ; travis sync -t $(TRAVIS_TOKEN) ; sleep 5 ; travis enable -r $(DOCKER_USER)/$(OPSYS)_$(SVCNAME) ; sleep 5 ; travis encrypt -r $(DOCKER_USER)/$(OPSYS)_$(SVCNAME) DOCKER_EMAIL=$(EMAIL) --add ; travis encrypt -r $(DOCKER_USER)/$(OPSYS)_$(SVCNAME) DOCKER_USER=$(DOCKER_USER) --add ; travis encrypt -r $(DOCKER_USER)/$(OPSYS)_$(SVCNAME) DOCKER_PASS=$(DOCKER_PASS) --add ; cat .travis.yml" | grep -v "env" | grep -v "repository" | grep -v "completion" | grep -v "enable" | grep -v "sync" >> .travis.yml.NEW ;\
 		tail -12 .travis.yml >> .travis.yml.NEW   ;\
 		rm -rf .travis.yml ;\
 		mv .travis.yml.NEW .travis.yml ;\
