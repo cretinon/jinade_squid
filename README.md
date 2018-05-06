@@ -132,4 +132,8 @@ make svc_first_push
 ---
 
 ![copyleft](https://upload.wikimedia.org/wikipedia/commons/c/c4/License_icon-copyleft-88x31.svg)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcretinon%2Fjinade_squid.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcretinon%2Fjinade_squid?ref=badge_shield)
  [copyleft ](https://www.gnu.org/licenses/copyleft.html) licence
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcretinon%2Fjinade_squid.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcretinon%2Fjinade_squid?ref=badge_large)
